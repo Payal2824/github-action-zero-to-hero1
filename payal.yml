@@ -1,0 +1,20 @@
+name : payal
+
+location : pune
+
+dob : 28/08/2005
+
+hobbies : 
+    -travelling historical places
+    -watching movies/historical movies
+    -eating
+
+hobbies : [travelling , watching movies , eating ]
+
+experience : 
+   devops : 
+      {
+      linux :2,
+      docker :1,
+      kubernetes :1
+      }
