@@ -1,0 +1,20 @@
+#this is workflow
+name : Hello workflow
+#runs on triggers
+on :
+  push :
+     branches : [main]
+
+#this is job inside the  workflows
+jobs :
+#this is name of the job
+   greet:
+       runs-on : ubuntu-latest
+       steps:
+          - name : say hello to user
+            run : echo "hello dosto"
+
+          - name : say hello to user
+            run : echo "hello $USER"
+
+          
