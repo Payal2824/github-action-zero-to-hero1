@@ -7,7 +7,7 @@ on :
 
 #this is job inside the  workflows
 jobs :
-#this is name of the job
+#this is name of the job    
    greet:
    #this is the github runner ,each job runs on a runner
        runs-on : ubuntu-latest
