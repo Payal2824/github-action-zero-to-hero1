@@ -1,0 +1,26 @@
+name: Hiii
+
+on : 
+  push:
+      branches: [main]
+
+
+job :
+    welcome:
+        runs-on: ubuntu-latest
+        steps:
+           - name : Say hii to guest
+             run : echo "hiii dosto"
+             
+    lunch:
+        runs-on: ubuntu-latest
+        steps: 
+           - name: say this time to lunch
+             run: echo "break to lunch"
+
+    stop:
+       runs-on: ubuntu-latest
+       steps:
+          - name: say this is end 
+            run : echo "lets stop"
+            
