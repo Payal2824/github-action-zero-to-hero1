@@ -1,0 +1,31 @@
+name : Portfolio
+ 
+on:
+    push:
+        branches: [main]
+
+permissions:
+    pages: write   # to display to pages
+    id-token : write 
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            # get access to your portfolio code via pre-built actions
+            # clones or checks out the code where this workflows is written
+            - name: checkout code
+              uses : actions/checkout@v4
+             
+            # setup github pages
+            - name : setup github pages
+              uses : actions/configure-pages@v4
+
+            # static code artifacts 
+            - name : upload static files
+              uses : actions/upload-pages-artifact@v4
+
+            - name : Deploy to github pages
+              uses : actions/deploy-pages@v4
+
